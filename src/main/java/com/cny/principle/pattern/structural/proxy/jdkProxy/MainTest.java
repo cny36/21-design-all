@@ -12,6 +12,7 @@ public class MainTest {
         DaoProxyFactory daoProxyFactory = new DaoProxyFactory(new UserDaoImpl());
         IUserDao userDaoProxy = daoProxyFactory.getUserDaoProxy();
 
+
         userDaoProxy.add(3, "zss", 34);
     }
 
