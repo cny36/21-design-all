@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.cny'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    implementation 'cglib:cglib:3.3.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
